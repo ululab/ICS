@@ -1,0 +1,54 @@
+{
+  "consent":{
+  "subject": {
+    "id": "testsubject-",
+    "email": "subject.ululab@example.com",
+    "first_name": "Mario",
+    "last_name": "Rossi",
+    "full_name": "Mario Rossi",
+    "verified": false
+  },
+  "legal_notices": [
+    {
+      "identifier": "privacy_policy",
+      "version": 123
+    },
+    {
+      "identifier": "term",
+      "version": 123
+    }
+  ],
+  "proofs": [
+    {
+      "content": [
+        {
+            "etichetta" : "nome",
+            "valore": "Mario"
+        },
+        {
+            "etichetta" : "cognome",
+            "valore": "Rossi"
+        },
+        {
+            "etichetta" : "email",
+            "valore": "mariorossi@gmail.com"
+        }
+        ],
+      "form": "<form>....</form>"
+    },
+    {
+      "content": "proof_2",
+      "form": "proof_2 form"
+    },
+    {
+       "content": "[{\"etichetta\":\"nome\",\"valore\":\"Mario\"},{\"etichetta\":\"cognome\",\"valore\":\"Rossi\"},{\"etichetta\":\"email\",\"valore\":\"mariorossi@gmail.com\"}]",
+       "form": "<form>....</form>"
+    },
+  ],
+  "preferences": {
+    "newsletter": false,
+    "privacy_policy": true
+  },
+  "ip_address": "127.0.0.1"
+  }
+}

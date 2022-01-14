@@ -216,11 +216,18 @@ class ICS
   |--------------------------------------------------------------------------
   |
   */
-  static function createConsent($arguments)
+  static function consentCreate($arguments)
   {
+
+    foreach ($arguments['proofs'] as $index => &$proof)
+    {
+      if(!is_string($proof['content']))
+      {
+        $proof['content'] = json_encode($proof['content']);
+      }
+    }
+
     return self::post('consent', $arguments);
   }
-
-
 
 }
